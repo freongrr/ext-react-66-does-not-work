@@ -14,7 +14,7 @@ export default class App extends React.Component {
 
     render() {
         return (
-            <Panel title="Panel" margin="20" padding="20" layout="fit">
+            <Panel title="Panel" margin="20" padding="20" layout="fit" height="400">
                 <Grid store={this.store}>
                     <Column text="Name" dataIndex="name" flex="1"/>
                     <Column text="Email" dataIndex="email" flex="1"/>
@@ -27,12 +27,13 @@ export default class App extends React.Component {
     }
 
     renderPhone = (value) => {
-        // BTW, this is another bug introduced by ExtReact 6.6
+        // Similarly, it's impossible to use JSX in a cell renderer with ExtReact 6.6
+        
         // This works
         return "Phone: " + value;
-        // This does not work anymore:
+
+        // But this does not work:
         //return <span style={{color: "red"}}>{value}</span>;
-        // Neither does this:
-        //return <Button>{value}</Button>;
+        //return <Button text={value}/>;
     };
 }
