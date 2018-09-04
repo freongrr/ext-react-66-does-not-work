@@ -3,18 +3,16 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "dependencies": {
-    "@sencha/ext": "6.6.0",
-    "@sencha/ext-modern": "6.6.0",
-    "@sencha/ext-modern-theme-material": "6.6.0",
-    "@sencha/ext-react": "6.6.0",
-    "@sencha/ext-react-renderercell": "6.6.0",
-    "@sencha/ext-react-transition": "6.6.0",
-    "react": "16.4.2",
-    "react-dom": "16.4.2"
+    "@extjs/ext-react": "6.5.3",
+    "@extjs/ext-react-core": "6.5.3",
+    "@extjs/ext-react-toolkit": "6.5.3",
+    "@extjs/reactor": "1.1.2",
+    "react": "15.6.2",
+    "react-dom": "15.6.2"
   },
   "devDependencies": {
-    "@sencha/ext-react-babel-plugin": "6.6.0",
-    "@sencha/ext-react-webpack-plugin": "6.6.0",
+    "@extjs/reactor-babel-plugin": "1.1.2",
+    "@extjs/reactor-webpack-plugin": "1.1.2",
     "babel-core": "6.26.3",
     "babel-loader": "7.1.5",
     "babel-polyfill": "6.26.0",
@@ -23,12 +21,11 @@
     "babel-preset-stage-1": "6.24.1",
     "clean-webpack-plugin": "0.1.19",
     "html-webpack-plugin": "3.2.0",
-    "webpack": "4.17.2",
-    "webpack-cli": "3.1.0",
-    "webpack-dev-server": "3.1.7"
+    "webpack": "3.12.0",
+    "webpack-dev-server": "2.11.2"
   },
   "scripts": {
-    "make": "webpack --progress --colors --mode production",
-    "start": "webpack-dev-server --progress --colors --mode development"
+    "make": "webpack --progress --colors",
+    "start": "webpack-dev-server --progress --colors --open"
   }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import {Column, Grid, Panel, RendererCell} from "@sencha/ext-modern";
+import {Button, Column, Grid, Panel, RendererCell} from "@extjs/ext-react";
 
 export default class App extends React.Component {
 
@@ -27,13 +27,7 @@ export default class App extends React.Component {
     }
 
     renderPhone = (value) => {
-        // Similarly, it's impossible to use JSX in a cell renderer with ExtReact 6.6
-        
-        // This works
-        return "Phone: " + value;
-
-        // But this does not work:
-        //return <span style={{color: "red"}}>{value}</span>;
-        //return <Button text={value}/>;
+        // This works with ExtReact 6.5
+        return <Button text={value}/>;
     };
 }

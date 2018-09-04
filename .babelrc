@@ -5,6 +5,6 @@
     "react"
   ],
   "plugins": [
-    "@sencha/ext-react-babel-plugin"
+    "@extjs/reactor-babel-plugin"
   ]
 }
